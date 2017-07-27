@@ -1,0 +1,28 @@
+{
+  "name": "comlog-system-monitor-event-email",
+  "version": "1.0.0",
+  "description": "Email on Status change",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ar-comlog/comlog-system-monitor-event-email.git"
+  },
+  "keywords": [
+    "system",
+    "monitoring",
+    "event",
+    "email"
+  ],
+  "author": "COMLOG GmbH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ar-comlog/comlog-system-monitor-event-email/issues"
+  },
+  "homepage": "https://github.com/ar-comlog/comlog-system-monitor-event-email#readme",
+  "dependencies": {
+    "emailjs": "^1.0.11"
+  }
+}
