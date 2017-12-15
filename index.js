@@ -11,8 +11,8 @@ function eMail(options) {
 	this.timeout = 5000;
 	this.domain = null;
 
-	this.subject = "Service {$name} is {$status}";
-	this.text = "Service {$name} status changed to {$status} at {$datetime}";
+	this.subject = "Service {$label} is {$status}";
+	this.text = "Service {$label} status changed to {$status} at {$datetime}";
 	this.from = "noreply@localhost";
 	this.to = "root@localhost";
 	this.attachment = [];
@@ -61,6 +61,7 @@ function eMail(options) {
 	};
 
 	if (options) for(var i in options) this[i] = options[i];
+	if (!this.label) this.label = this.name || this.host || 'unbekannt';
 }
 
 module.exports = eMail;

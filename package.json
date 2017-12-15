@@ -1,6 +1,6 @@
 {
   "name": "comlog-system-monitor-event-email",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Email on Status change",
   "main": "index.js",
   "scripts": {
