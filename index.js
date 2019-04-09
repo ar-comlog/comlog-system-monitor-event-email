@@ -1,6 +1,7 @@
 var _email   = require("emailjs");
 
 function eMail(options) {
+	var _self = this;
 	this.authentication = null; //'PLAIN', 'LOGIN', 'CRAM-MD5', 'XOAUTH2'
 	this.user = null;
 	this.password = null;
@@ -16,6 +17,8 @@ function eMail(options) {
 	this.from = "noreply@localhost";
 	this.to = "root@localhost";
 	this.attachment = [];
+
+	this.logger = console;
 
 	this.start = function(info, cb) {
 		var server = _email.server.connect({
