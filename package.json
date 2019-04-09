@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/ar-comlog/comlog-system-monitor-event-email#readme",
   "dependencies": {
-    "emailjs": "^1.0.11"
+    "emailjs": "^1.1.0"
   }
 }
